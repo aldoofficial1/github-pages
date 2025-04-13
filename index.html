@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daftar Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #000; /* LATAR BELAKANG HITAM */
+      color: #fff; /* WARNA TEKS PUTIH */
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .settings-button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .search-box {
+      margin: 0 auto 30px auto;
+      text-align: center;
+    }
+
+    .search-box input {
+      width: 90%;
+      max-width: 400px;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .video-container {
+      width: 360px;
+      height: auto;
+      margin: 0 auto 40px auto;
+      text-align: center;
+    }
+
+    .video-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .video-wrapper {
+      width: 360px;
+      height: 640px;
+      margin: 0 auto;
+      background-color: black;
+      overflow: hidden;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- Judul utama warna-warni -->
+  <body>
+  <!-- Judul utama pelangi bergerak -->
+  <div style="text-align:center; background-color:#000; padding: 20px 10px;">
+    <h1 style="
+      margin: 0;
+      font-size: 36px;
+      font-weight: bold;
+      background: linear-gradient(270deg, red, orange, yellow,magenta, green, blue, indigo, violet, red);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbowText 8s linear infinite;
+    ">
+      Situs Bokep Watching Porn
+    </h1>
+  </div>
+  <style>
+    @keyframes rainbowText {
+      0% { background-position: 0% 
+      100% { background-position: 100% 50%; }
+    }
+  </style>
+  
+</body>
+  <div class="content">
+    <h1>Search Video</h1>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Pencarian..." onkeyup="searchVideos()">
+    </div>
+
+    <div id="videoList">
+      <div class="video-container" data-title="Bu Guru">
+        <div class="video-title">Bu Guru Salsa Viral</div>
+        <div class="video-wrapper">
+          <video controls>
+            <source src="https://l.top4top.io/m_3390kztfd0.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-container" data-title="Bocil SD Part 1">
+        <div class="video-title">Bocil SD Part 1</div>
+        <div class="video-wrapper">
+          <video controls>
+            <source src="https://k.top4top.io/m_3390fhxuw0.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="video-container" data-title="Bocil SD Part 2">
+        <div class="video-title">Bocil SD Part 2</div>
+        <div class="video-wrapper">
+          <video controls>
+            <source src="https://l.top4top.io/m_339067da80.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function searchVideos() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const videoItems = document.querySelectorAll('#videoList .video-container');
+
+      videoItems.forEach(item => {
+        const title = item.getAttribute('data-title').toLowerCase();
+        item.style.display = title.includes(input) ? 'block' : 'none';
+      });
+    }
+  </script>
+
+</body>
+</html>
